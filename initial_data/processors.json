@@ -1,0 +1,32 @@
+[
+  {
+    "model": "Processor",
+    "data": {
+      "name": "TSYS",
+      "small_pct": 0.01,
+      "small_flat": 0.1,
+      "large_pct": 0.02,
+      "large_flat": 0.1
+    }
+  },
+  {
+    "model": "Processor",
+    "data": {
+      "name": "First Data",
+      "small_pct": 0.0125,
+      "small_flat": 0.08,
+      "large_pct": 0.01,
+      "large_flat": 0.9
+    }
+  },
+  {
+    "model": "Processor",
+    "data": {
+      "name": "EVO",
+      "small_pct": 0.011,
+      "small_flat": 0.09,
+      "large_pct": 0.015,
+      "large_flat": 0.2
+    }
+  }
+]
