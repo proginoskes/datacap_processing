@@ -51,6 +51,7 @@ processors.retrieve = async (req, res) => {
             },0)
             return proc;
         })
+        all_processors[0] = all_processors[0].sort((a,b) => (b.revenue - a.revenue))
         res.send(all_processors[0]);
     } catch (err) {
         console.log("Error is Processor: " + err);

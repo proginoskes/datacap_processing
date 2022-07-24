@@ -36,7 +36,7 @@ npm install
 ```
 
 Once everything is installed, create two terminal instances. In one, start the terminal with
-`npm start`. Then, in the other terminal, run `npm test:api`. The output is messy, but it shows
+`npm start`. Then, in the other terminal, run `npm run test:api`. The output is messy, but it shows
 the appropriate behavior for the assignment.
 
 ## The Database
