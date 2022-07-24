@@ -2,7 +2,7 @@
 const os = require('os');
 
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('datacap_payment_processing', 'postgres', 'password', {
+var sequelize = new Sequelize('datacap_payment_processing', 'postgres', process.env.PASSWORD, {
     host: 'localhost',
     dialect: 'postgres',
     logging: null,

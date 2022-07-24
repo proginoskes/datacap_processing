@@ -61,16 +61,17 @@ processors.retrieve = async (req, res) => {
 
 transactions.retrieve = async (req, res) => {
     try {
-        const transactId = req.query.transact_id;
+        const refNo = req.query.refNo;
         let transact;
-        if(transactId){
+        if(refNo){
             transact = await db.sequelize.query(
                 'SELECT * FROM transactions\n' +
-                `WHERE id=${transactId}\n`
+                `WHERE ref_no=${refNo}\n`
             );
         } else {
             transact = await db.sequelize.query(
-                'SELECT * FROM transactions\n'
+                'SELECT * FROM transactions\n' +
+                'ORDER BY ref_no'
             );
         }
         res.send(transact[0]);
