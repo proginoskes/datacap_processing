@@ -9,9 +9,9 @@ var sequelize = new Sequelize('datacap_payment_processing', 'postgres', process.
     port: 5432,
     pool: {
         max: parseInt(
-            120 /  os.cpus().length,
+            80 /  os.cpus().length,
         ),
-        min: 2,
+        min: 0,
         idle: 10000,
         acquire: 20000,
     },
