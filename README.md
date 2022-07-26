@@ -29,6 +29,16 @@ To install PostgreSQL, either use the installer available on the PostgreSQL [off
 choco install postgresql14 --params '/Password:password /Port:5432' --ia '--enable-components server,commandlinetools'
 ```
 
+After you've installed PostgreSQL, initialize your database by starting the command line interface with:
+```
+psql -Upostgres
+```
+and then create a new database called 'datacap_payment_processing' by running (in psql):
+```
+CREATE DATABASE datacap_payment_processing;
+```
+quit psql by running `\q`.
+
 If you do not have node, you can install it with `choco install nodejs` or by going to the official
 nodejs [site](https://nodejs.org/en/download/). To install the rest of the dependencies simply run:
 ```
@@ -38,6 +48,7 @@ npm install
 Once everything is installed, create a file names '.env' in the root directory. the
 contents of this file should be:
 ```
+DB_NAME='datacap_payment_processing'
 DB_USER='postgres'
 DB_PASSWORD='password'
 ```

@@ -1,5 +1,3 @@
-'use strict';
-
 if (!global.hasOwnProperty('db')) {
     const {Sequelize, sequelize} = require('../service/db');
 
