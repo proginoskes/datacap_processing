@@ -1,7 +1,7 @@
 'use strict';
 
 if (!global.hasOwnProperty('db')) {
-    let {Sequelize, sequelize} = require('../service/db');
+    const {Sequelize, sequelize} = require('../service/db');
 
     global.db = {
         Sequelize: Sequelize,

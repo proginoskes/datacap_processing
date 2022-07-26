@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(sequelize, DataTypes) {
+module.exports = (sequelize, DataTypes) => {
     var Transaction = sequelize.define('Transaction',
         {
             ref_no: {

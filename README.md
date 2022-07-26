@@ -35,7 +35,14 @@ nodejs [site](https://nodejs.org/en/download/). To install the rest of the depen
 npm install
 ```
 
-Once everything is installed, create two terminal instances. In one, start the terminal with
+Once everything is installed, create a file names '.env' in the root directory. the
+contents of this file should be:
+```
+DB_USER='postgres'
+DB_PASSWORD='password'
+```
+or whichever PostgreSQL user and password you chose.
+Then, create two terminal instances. In one, start the terminal with
 `npm start`. Then, in the other terminal, run `npm run test:api`. The output is messy, but it shows
 the appropriate behavior for the assignment.
 
