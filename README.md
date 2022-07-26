@@ -45,12 +45,13 @@ nodejs [site](https://nodejs.org/en/download/). To install the rest of the depen
 npm install
 ```
 
-Once everything is installed, create a file names '.env' in the root directory. the
-contents of this file should be:
+Once everything is installed, create a file named '.env' in the root directory (if it hasn't already been 
+created). The contents of this file should be:
 ```
 DB_NAME='datacap_payment_processing'
 DB_USER='postgres'
 DB_PASSWORD='password'
+PORT=3000
 ```
 or whichever PostgreSQL user and password you chose.
 Then, create two terminal instances. In one, start the terminal with

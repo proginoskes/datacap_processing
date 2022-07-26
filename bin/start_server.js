@@ -20,7 +20,7 @@ db.sequelize.sync().then(function() {
     });
 });
 
-function onError(error) {
+const onError = (error) => {
     if (error.syscall !== 'listen') {
         throw error;
     }
@@ -39,7 +39,7 @@ function onError(error) {
     }
 }
 
-function onListening() {
+const onListening = () => {
     var addr = server.address();
     debug('Listening on port' + addr.port);
 }
